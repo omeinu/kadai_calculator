@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+        <link rel="stylesheet" href="main.css">
+        <title>ストップウォッチ</title>
+      </head>
+ 
+      <body>
+        <div class="content_wrapper">
+        
+          <input type="text" id="result">
+        
+          <div>
+            <input type="button" class="btn" value="7" onclick="edit(this)">
+            <input type="button" class="btn" value="8" onclick="edit(this)">
+            <input type="button" class="btn" value="9" onclick="edit(this)">
+            <input type="button" class="btn no_first" value="+" onclick="edit(this)">
+          </div>
+        
+          <div class="formula">
+            <input type="button" class="btn" value="4" onclick="edit(this)">
+            <input type="button" class="btn" value="5" onclick="edit(this)">
+            <input type="button" class="btn" value="6" onclick="edit(this)">
+            <input type="button" class="btn" value="-" onclick="edit(this)">
+          </div>
+        
+          <div class="formula">
+            <input type="button" class="btn" value="1" onclick="edit(this)">
+            <input type="button" class="btn" value="2" onclick="edit(this)">
+            <input type="button" class="btn" value="3" onclick="edit(this)">
+            <input type="button" class="btn no_first" value="*" onclick="edit(this)">
+          </div>
+        
+          <div class="formula">
+           <input type="button" class="btn" value="0" onclick="edit(this)">
+            <input type="button" class="btn no_first"  value="00" onclick="edit(this)">
+            <input type="button" class="btn no_first" value="." onclick="edit(this)">
+            <input type="button" class="btn no_first" value="/" onclick="edit(this)">
+          </div>
+        
+          <div class="AC">
+            <input type="button" class="btn no_first" value="AC" onclick="reset()">
+            <input type="button" class="btn no_first" value="=" onclick="calc()">
+          </div>
+        
+        
+        
+        </div>
+        
+        <script src="main.js"></script>
+      </body>
+    </html>
